@@ -32,19 +32,24 @@ const questions = [
     choices: ["MIT", "GPLv2", "Apache", "NONE"],
   },
   {
-    type: "",
-    message: "",
-    name: "",
+    type: "input",
+    message: "Username on github",
+    name: "githubUsername",
   },
   {
-    type: "",
-    message: "",
-    name: "",
+    type: "input",
+    message: "Who contributed?",
+    name: "contributionGuidelines",
   },
   {
-    type: "",
-    message: "",
-    name: "",
+    type: "input",
+    message: "Test instructions",
+    name: "testInstructions",
+  },
+  {
+    type: "input",
+    message: "Email Address",
+    name: "email",
   },
 ];
 
@@ -56,7 +61,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    writeToFile("README.md", generateMarkdown(answers));
+    console.log(answers);
+    writeToFile("README2.md", generateMarkdown(answers));
   });
 }
 
