@@ -42,7 +42,7 @@ This project generates a read me with licensing and a table of contents
 
 ## Installation:
 
-There are none
+You need to install Node [](https://www.npmjs.com/package/inquirer)
 
 ## Usage:
 
