@@ -54,24 +54,29 @@ function generateMarkdown(answers) {
    # Description:
    ${answers.description}
    ## Table of Contents: 
-  [Installation](#Installation:)
-  [Usage](#Usage:)
-  [License](#License:)
-  [Contributing](#Contributing:)
-  [Tests](#Tests:)
-  [Questions](#Questions:)
+  - [Installation](#Installation:)
 
-   # Installation:
+  - [Usage](#Usage:)
+
+  - [License](#License:)
+
+  - [Contributing](#Contributing:)
+
+  - [Tests](#Tests:)
+
+  - [Questions](#Questions:)
+
+   ## Installation:
    ${answers.installation}
-   # Usage:
+   ## Usage:
    ${answers.usage}
-  # License:
+   ## License:
    ${renderLicenseSection(answers.license)}
-   # Contributing:
+   ## Contributing:
    ${answers.contributionGuidelines}
-   # Tests:
+   ## Tests:
    ${answers.testInstructions}
-   # Questions:
+   ## Questions:
    If you have any questions please contact me at: ${answers.email}
    [${answers.githubUsername}](https://github.com/${answers.githubUsername})
 
